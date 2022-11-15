@@ -1,0 +1,52 @@
+<div style="margin-left: 150px">
+    <p>Register new user</p>
+    <section>
+        <form id="formData" #userData="ngForm" (ngSubmit)="registerUser(userData.value)">
+            <div>
+                <input matInput placeholder="Firstname" name="firstname" type="text" ngModel>
+            </div>
+            <br>
+            <div>
+                <input matInput placeholder="Lastname" name="lastname" type="text" ngModel>
+            </div>
+            <br>
+            <div>
+                <input matInput placeholder="Email" name="email" type="email" ngModel>
+            </div>
+            <br>
+            <div>
+                <input matInput placeholder="Password" name="password" type="password" ngModel>
+            </div>
+            <br>
+            <input type="submit" value="Register" matButton>
+        </form>
+    </section>
+</div>
+
+
+<!-- <mat-card>
+    <mat-card-title>Register new user</mat-card-title>
+    <mat-card-content>
+        <form id="formData" #userData="ngForm" (ngSubmit)="registerUser(userData.value)">
+            <mat-input-container>
+                <input matInput placeholder="Firstname" name="firstname" type="text" ngModel>
+            </mat-input-container>
+            <br>
+            <mat-input-container>
+                <input matInput placeholder="Lastname" name="lastname" type="text" ngModel>
+            </mat-input-container>
+            <br>
+            <mat-input-container>
+                <input matInput placeholder="Email" name="email" type="email" ngModel>
+            </mat-input-container>
+            <br>
+            <mat-input-container>
+                <input matInput placeholder="Password" name="paswword" type="password" ngModel>
+            </mat-input-container>
+            <br>
+            <input type="submit" value="Register" matButton>
+        </form>
+    </mat-card-content>
+</mat-card> -->
+
+

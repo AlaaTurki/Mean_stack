@@ -1,0 +1,39 @@
+            
+            <section>
+                
+    <form id="formData" #userData="ngForm" (ngSubmit)="registerUser(userData.value)">
+        <div class="container">
+            <p>Register new user</p>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+
+            <div>
+                <label for="email"><b>First Name</b></label>
+                <input type="text" placeholder="First Name" name="firstname" ngModel>
+            </div>
+            <div>
+                <label for="email"><b>Last Name</b></label>
+                <input type="text" placeholder="Last Name" name="lastname" ngModel>
+            </div>
+            <div>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" ngModel>
+            </div>
+            <div>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" ngModel>
+            </div>
+            <!-- <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="password" id="psw-repeat" required>
+          <hr> -->
+
+            <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+            <!-- <button type="submit" value="Register" class="registerbtn">Register</button> -->
+            <input type="submit" value="Register" class="registerbtn" matButton>
+        </div>
+
+        <div class="container signin">
+          <p>Already have an account? <a href="/login">Sign in</a>.</p>
+        </div>
+    </form>
+</section>
