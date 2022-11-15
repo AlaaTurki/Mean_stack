@@ -10,13 +10,13 @@ export class RegisterComponent implements OnInit {
 
   constructor(private apiService:ApiService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   registerUser(user:any)
   {
     this.apiService.registerUser(user);
     console.log(user);
+    
 
   }
 
@@ -26,6 +26,9 @@ export class RegisterComponent implements OnInit {
     //this.isRegistered=true;
     //console.log(user);
   //}
+
+
+
   
 
 
