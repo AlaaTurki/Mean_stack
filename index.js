@@ -114,13 +114,8 @@ app.post('/register',(req,res)=>{
         user.email=email;
         user.password=password;
     
-        user.save((err,result)=>{
-            if(err){
-                console.log("erreur lors de l'ajoute d'un user dans database");
-                res.sendStatus(500);
-            }
-            res.sendStatus(200);
-        })
+        user.save();
+        res.sendStatus(200).send();
     })
 
 //login ---------------------------
