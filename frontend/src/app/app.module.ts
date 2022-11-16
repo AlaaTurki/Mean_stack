@@ -28,6 +28,10 @@ import { HighlightDirective } from './highlight.directive';
     HomeComponent,
     HighlightDirective
   ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+  
   imports: [
     BrowserModule,
     FormsModule,
