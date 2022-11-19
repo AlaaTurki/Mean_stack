@@ -99,6 +99,7 @@ app.get('/', (req, res) => {
 // })
 
 //register
+
 app.post('/register', (req, res) => {
     console.log(req.body);
 
@@ -119,6 +120,24 @@ app.post('/register', (req, res) => {
             res.sendStatus(500);
         }
         res.sendStatus(200);
+    })
+app.post('/register',(req,res)=>{
+        console.log(req.body);
+    
+        var firstname=req.body.firstname
+        var lastname=req.body.lastname
+        var email=req.body.email
+        var password=req.body.password
+    
+        var user=new User();
+        user.firstname=firstname;
+        user.lastname=lastname;
+        user.email=email;
+        user.password=password;
+    
+        user.save();
+        res.sendStatus(200).send();
+
     })
 })
 
